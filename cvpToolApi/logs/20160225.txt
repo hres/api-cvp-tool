@@ -1,0 +1,82 @@
+********** 10:20:53 AM **********
+Exception Type: System.OverflowException
+Exception: Value was either too large or too small for an Int32.
+Source: DbConnection.cs - GetAllDrugProductIngredients()
+Stack Trace: 
+   at System.Convert.ToInt32(Int64 value)
+   at System.Int64.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at cvp.DBConnection.GetAllDrugProductIngredient() in C:\Users\hcuser\Documents\cvpToolApi\cvpWebApi\App_Data\DBConnection.cs:line 192
+
+********** 2:42:18 PM **********
+Exception Type: System.FormatException
+Exception: String was not recognized as a valid DateTime.
+Source: DbConnection.cs - GetReportByDrugName()
+Stack Trace: 
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at cvp.DBConnection.GetAEExportReportByDrugName(String drugName) in C:\Users\hcuser\Documents\cvpToolApi\cvpWebApi\App_Data\DBConnection.cs:line 322
+
+********** 2:47:21 PM **********
+Exception Type: System.FormatException
+Exception: String was not recognized as a valid DateTime.
+Source: DbConnection.cs - GetReportByDrugName()
+Stack Trace: 
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at cvp.DBConnection.GetAEExportReportByDrugName(String drugName) in C:\Users\hcuser\Documents\cvpToolApi\cvpWebApi\App_Data\DBConnection.cs:line 322
+
+********** 2:48:02 PM **********
+Exception Type: System.FormatException
+Exception: String was not recognized as a valid DateTime.
+Source: DbConnection.cs - GetReportByDrugName()
+Stack Trace: 
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at cvp.DBConnection.GetAEExportReportByDrugName(String drugName) in C:\Users\hcuser\Documents\cvpToolApi\cvpWebApi\App_Data\DBConnection.cs:line 322
+
+********** 2:48:29 PM **********
+Exception Type: System.FormatException
+Exception: String was not recognized as a valid DateTime.
+Source: DbConnection.cs - GetReportByDrugName()
+Stack Trace: 
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at cvp.DBConnection.GetAEExportReportByDrugName(String drugName) in C:\Users\hcuser\Documents\cvpToolApi\cvpWebApi\App_Data\DBConnection.cs:line 322
+
+********** 2:48:54 PM **********
+Exception Type: System.FormatException
+Exception: String was not recognized as a valid DateTime.
+Source: DbConnection.cs - GetReportByDrugName()
+Stack Trace: 
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at cvp.DBConnection.GetAEExportReportByDrugName(String drugName) in C:\Users\hcuser\Documents\cvpToolApi\cvpWebApi\App_Data\DBConnection.cs:line 322
+
+********** 2:48:54 PM **********
+Exception Type: System.FormatException
+Exception: String was not recognized as a valid DateTime.
+Source: DbConnection.cs - GetReportByDrugName()
+Stack Trace: 
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at cvp.DBConnection.GetAEExportReportByDrugName(String drugName) in C:\Users\hcuser\Documents\cvpToolApi\cvpWebApi\App_Data\DBConnection.cs:line 322
+
+********** 2:51:55 PM **********
+Exception Type: System.FormatException
+Exception: String was not recognized as a valid DateTime.
+Source: DbConnection.cs - GetReportByDrugName()
+Stack Trace: 
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at cvp.DBConnection.GetAEExportReportByDrugName(String drugName) in C:\Users\hcuser\Documents\cvpToolApi\cvpWebApi\App_Data\DBConnection.cs:line 322
+
+********** 2:51:55 PM **********
+Exception Type: System.FormatException
+Exception: String was not recognized as a valid DateTime.
+Source: DbConnection.cs - GetReportByDrugName()
+Stack Trace: 
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at cvp.DBConnection.GetAEExportReportByDrugName(String drugName) in C:\Users\hcuser\Documents\cvpToolApi\cvpWebApi\App_Data\DBConnection.cs:line 322
+
