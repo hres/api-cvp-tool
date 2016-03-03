@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace cvpWebApi.Models
+namespace cvpToolApi.Models
 {
     public class DrugProduct
     {

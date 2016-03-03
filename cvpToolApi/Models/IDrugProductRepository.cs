@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace cvpWebApi.Models
+namespace cvpToolApi.Models
 {
     interface IDrugProductRepository
     {

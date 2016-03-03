@@ -1,9 +1,9 @@
 using System;
 using System.Web.Http;
 using System.Web.Mvc;
-using cvpWebApi.Areas.HelpPage.Models;
+using cvpToolApi.Areas.HelpPage.Models;
 
-namespace cvpWebApi.Areas.HelpPage.Controllers
+namespace cvpToolApi.Areas.HelpPage.Controllers
 {
     /// <summary>
     /// The controller that will handle requests for the help page.

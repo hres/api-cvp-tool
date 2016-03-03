@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using cvp;
-namespace cvpWebApi.Models
+namespace cvpToolApi.Models
 {
-    public class AEReportRepository : IAEReportRepository
+    public class AdverseReactionReportRepository : IAdverseReactionReportRepository
     {
         // We are using the list and _fakeDatabaseID to represent what would
         // most likely be a database of some sort, with an auto-incrementing ID field:
-        private List<AEReport> _reports = new List<AEReport>();
-        private AEReport _report = new AEReport();
+        private List<AdversReactionReport> _reports = new List<AdversReactionReport>();
+        private AdversReactionReport _report = new AdversReactionReport();
         DBConnection dbConnection = new DBConnection("en");
 
 
-        public IEnumerable<AEReport> GetAll()
+        public IEnumerable<AdversReactionReport> GetAll()
         {
             _reports = null; // dbConnection.GetAllReport();
 
@@ -22,13 +22,13 @@ namespace cvpWebApi.Models
         }
 
 
-        public AEReport Get(int id)
+        public AdversReactionReport Get(int id)
         {
             _report = null; //dbConnection.GetReportById(id);
             return _report;
         }
 
-        public IEnumerable<AEReport> Get(string drugName)
+        public IEnumerable<AdversReactionReport> Get(string drugName)
         {
            
             _reports = dbConnection.GetAEExportReportByDrugName(drugName);

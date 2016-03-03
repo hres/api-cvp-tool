@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using cvp;
-namespace cvpWebApi.Models
+namespace cvpToolApi.Models
 {
     public class DrugProductRepository : IDrugProductRepository
     {

@@ -169,20 +169,32 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
-    <Compile Include="Controllers\AEReportController.cs" />
+    <Compile Include="Controllers\AdverseReactionReportController.cs" />
     <Compile Include="Controllers\DrugProductController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\IAEReportRepository.cs" />
-    <Compile Include="Models\AEReport.cs" />
-    <Compile Include="Models\AEReportRepository.cs" />
+    <Compile Include="Models\IAdverseReactionReportRepository.cs" />
+    <Compile Include="Models\AdversReactionReport.cs" />
+    <Compile Include="Models\AdverseReactionReportRepository.cs" />
     <Compile Include="Models\DrugProduct.cs" />
     <Compile Include="Models\DrugProductRepository.cs" />
     <Compile Include="Models\IDrugProductRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />
@@ -241,19 +253,7 @@
     <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="dataextract\drugnames.xml" />
-    <Content Include="dataextract\drug_products.txt" />
-    <Content Include="dataextract\drug_product_ingredients.txt" />
-    <Content Include="dataextract\gender_lx.txt" />
-    <Content Include="dataextract\outcome_lx.txt" />
-    <Content Include="dataextract\reactions.txt" />
-    <Content Include="dataextract\reports.txt" />
-    <Content Include="dataextract\report_drug.txt" />
-    <Content Include="dataextract\report_drug_indication.txt" />
-    <Content Include="dataextract\report_links.txt" />
-    <Content Include="dataextract\report_type_lx.txt" />
-    <Content Include="dataextract\seriousness_lx.txt" />
-    <Content Include="dataextract\source_lx.txt" />
-    <Content Include="dataextract\test.xml" />
+    <Content Include="default.aspx" />
     <Content Include="distro\4.0.19\ajax\sitemenu-en.html" />
     <Content Include="distro\4.0.19\ajax\sitemenu-fr.html" />
     <Content Include="distro\4.0.19\assets\backdrop.png" />
@@ -539,7 +539,6 @@
     <Content Include="distro\4.0.19\js\wet-boew.js" />
     <Content Include="distro\4.0.19\js\wet-boew.min.js" />
     <Content Include="distro\4.0.19\metaData.aspx" />
-    <Content Include="exportTool.html" />
     <Content Include="Global.asax" />
     <Content Include="Areas\HelpPage\Views\Web.config" />
     <Content Include="Areas\HelpPage\Views\Shared\_Layout.cshtml" />
@@ -575,6 +574,10 @@
     <Content Include="distro\4.0.19\js\wet-boew.min.js.map" />
     <Content Include="distro\4.0.19\timeout.jsp" />
     <Content Include="dataextract\drugnames.json" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="js\cvpfunctions.js" />
     <Content Include="js\loadxml.js" />

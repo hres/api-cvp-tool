@@ -7,7 +7,7 @@ using System.Net.Http.Headers;
 using System.Text;
 using Newtonsoft.Json.Converters;
 
-namespace cvpWebApi
+namespace cvpToolApi
 {
     public static class WebApiConfig
     {

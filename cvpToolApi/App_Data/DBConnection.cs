@@ -6,7 +6,7 @@ using System.Data;
 //using System.Data.SqlClient;
 using System.Text;
 using System.Configuration;
-using cvpWebApi.Models;
+using cvpToolApi.Models;
 using System.Data.Odbc;
 using Oracle.ManagedDataAccess.Client;
 using System.Globalization;
@@ -174,9 +174,9 @@ namespace cvp
 
 
 
-        public List<AEReport> GetAEReportByDrugName(string drugName)
+        public List<AdversReactionReport> GetAEReportByDrugName(string drugName)
         {
-            var items = new List<AEReport>();
+            var items = new List<AdversReactionReport>();
             string strDrugNames = "'" + drugName.Replace(",", "','") + "'";
             string commandText = " SELECT rp.* FROM REPORTS rp WHERE rp.REPORT_ID IN (SELECT DISTINCT r.REPORT_ID ";
             commandText += "from ADR_MV r, REPORT_DRUGS_MV rd, (SELECT DISTINCT report_id COL1 from REPORT_DRUGS_MV where UPPER(DRUGNAME) IN (SELECT DISTINCT dp.DRUGNAME FROM DRUG_PRODUCTS dp where dp.DRUGNAME IN (" + strDrugNames.ToUpper() + "))) TEMP1 ";
@@ -197,7 +197,7 @@ namespace cvp
                         {
                             while (dr.Read())
                             {
-                                var item = new AEReport();
+                                var item = new AdversReactionReport();
                                 //item.ReportId = dr["REPORT_ID"] == DBNull.Value ? 0 : Convert.ToInt32(dr["REPORT_ID"]);
                                 item.ReportNo = dr["REPORT_NO"] == DBNull.Value ? string.Empty : dr["REPORT_NO"].ToString().Trim();
                                 item.VersionNo = dr["VERSION_NO"] == DBNull.Value ? 0 : Convert.ToInt32(dr["VERSION_NO"]);
@@ -276,9 +276,9 @@ namespace cvp
         }
 
 
-        public List<AEReport> GetAEExportReportByDrugName(string drugName)
+        public List<AdversReactionReport> GetAEExportReportByDrugName(string drugName)
         {
-            var items = new List<AEReport>();
+            var items = new List<AdversReactionReport>();
             string strDrugNames = "'" + drugName.Replace(",", "','") + "'";
             string commandText = "SELECT r.ADR_ID, r.REPORT_ID, r.REPORT_NO, r.VERSION_NO, r.DATRECEIVED, ";
             commandText += "r.DATINTRECEIVED, r.MAH_NO, r.REPORT_TYPE_ENG, r.REPORT_TYPE_FR, r.GENDER_ENG, ";
@@ -314,7 +314,7 @@ namespace cvp
                         {
                             while (dr.Read())
                             {
-                                var item = new AEReport();
+                                var item = new AdversReactionReport();
 
                                 item.ReportNo = dr["REPORT_NO"] == DBNull.Value ? string.Empty : dr["REPORT_NO"].ToString().Trim();
                                 item.VersionNo = dr["VERSION_NO"] == DBNull.Value ? 0 : Convert.ToInt32(dr["VERSION_NO"]);

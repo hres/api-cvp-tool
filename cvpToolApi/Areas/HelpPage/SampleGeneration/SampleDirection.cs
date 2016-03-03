@@ -1,4 +1,4 @@
-namespace cvpWebApi.Areas.HelpPage
+namespace cvpToolApi.Areas.HelpPage
 {
     /// <summary>
     /// Indicates whether the sample is used for request or response

@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="cvpToolApi._default" %>
+
+<!DOCTYPE html>
 <!--[if lt IE 9]><html class="no-js lt-ie9" lang="<bean:message bundle='clfRes' key='label.app.lang'/>" dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
 <html class="no-js" lang="en" dir="ltr">
 <!--<![endif]-->
@@ -270,8 +272,8 @@
             function searchReportDrug() {
 
                 var id = $('#resultDrugProduct').val();
-
-                $.getJSON(uri1 + "/?drugname=" + id + "&type=json").done(function (data) {
+               
+                $.getJSON(uri1 + "?drugname=" + id + "&type=json").done(function (data) {
 
                     // Add a list item for the product.
                     var output = "<div class='table-responsive'>";

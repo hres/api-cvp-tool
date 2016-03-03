@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace cvpWebApi.Models
+namespace cvpToolApi.Models
 {
-    public class AEReport
+    public class AdversReactionReport
     {
         //public int ReportId { get; set; }
         public string ReportNo { get; set; }

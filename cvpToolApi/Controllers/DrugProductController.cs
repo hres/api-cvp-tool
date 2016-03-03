@@ -4,9 +4,9 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using cvpWebApi.Models;
+using cvpToolApi.Models;
 
-namespace cvpWebApi.Controllers
+namespace cvpToolApi.Controllers
 {
     public class DrugProductController : ApiController
     {
