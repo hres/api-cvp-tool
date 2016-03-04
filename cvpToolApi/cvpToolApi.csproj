@@ -575,6 +575,7 @@
     <Content Include="distro\4.0.19\js\wet-boew.min.js.map" />
     <Content Include="distro\4.0.19\timeout.jsp" />
     <Content Include="dataextract\drugnames.json" />
+    <None Include="Properties\PublishProfiles\compiled.pubxml" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
