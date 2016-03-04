@@ -580,6 +580,7 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
+    <Content Include="index.html" />
     <Content Include="js\cvpfunctions.js" />
     <Content Include="js\loadxml.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
